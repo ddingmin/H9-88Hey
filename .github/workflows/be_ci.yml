@@ -52,5 +52,5 @@ jobs:
         run: chmod +x ./backend/gradlew
 
       - name: Run tests with Gradle
-        run: ./backend/gradlew test
+        run: ./gradlew test
         working-directory: ./backend
