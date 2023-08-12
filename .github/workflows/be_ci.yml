@@ -2,7 +2,7 @@ name: Set Mysql And CI
 
 on:
   push:
-    branches: ["be-test"]
+    branches: ["be-testCI"]
   workflow_dispatch:
 
 jobs:
