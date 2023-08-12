@@ -38,6 +38,11 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
+      
+      - name: checkPath
+        run: |
+          pwd
+          ls
 
       - name: Set yml file for database connection
         uses: microsoft/variable-substitution@v1
