@@ -14,6 +14,7 @@ jobs:
         image: mysql:8.0
         env:
           MYSQL_ROOT_PASSWORD: rootpassword
+
         ports:
           - 3306:3306
         options: >-
@@ -44,7 +45,7 @@ jobs:
         with:
           files: "./backend/src/main/resources/application.yaml"
         env:
-          spring.datasource.url: jdbc:mysql://localhost:3306/88hey-test
+          spring.datasource.url: jdbc:mysql://localhost:3306/88heyTest
           spring.datasource.username: root
           spring.datasource.password: rootpassword
 
