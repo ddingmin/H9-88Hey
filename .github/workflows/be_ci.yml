@@ -1,8 +1,8 @@
-name: Run MySQL and Execute SQL
+name: Set Mysql And CI
 
 on:
   push:
-    branches: ["be-dev"]
+    branches: ["be-test"]
   workflow_dispatch:
 
 jobs:
