@@ -38,16 +38,11 @@ jobs:
         with:
           java-version: '11'
           distribution: 'temurin'
-      
-      - name: checkPath
-        run: |
-          pwd
-          ls
 
       - name: Set yml file for database connection
         uses: microsoft/variable-substitution@v1
         with:
-          files: "./backend/src/main/resources/application.yml"
+          files: "./backend/src/main/resources/application.yaml"
         env:
           spring.datasource.url: jdbc:mysql://localhost:3306/88hey-test
           spring.datasource.username: root
